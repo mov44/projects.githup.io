@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.parent1{
+    position: relative;
+    display:flex;
+    /* display:inline; */
+    height: 800px;
+
+flex-direction: column;
+justify-content: space-between;/* y */
+align-items: flex-start;  /* x */
+}
+.parent1 .a{
+    position: relative;
+    animation-name: a ;
+    animation-fill-mode: forwards;
+    animation-duration: 3s ;
+    width: 100px;
+    height:100px;
+    border:2px double white;
+    border-radius: 50%;
+    background-color: rgb(13, 14, 14);
+    left:0;
+}
+@keyframes a{
+    0%{ 
+        left:0;
+        transform: rotate(0);
+    }
+   99.7%{
+    background-color: aqua;
+   }
+    100%{ 
+        background-color: black;
+        left:93.2%;
+        transform: rotate(540deg);
+    }
+}
+.parent1 .b{
+    position: relative;
+    border:2px double white;
+    border-radius: 50%;
+    animation-name: b ;
+    animation-delay: 3s;
+    animation-duration: 3s ;
+    width: 100px;
+    height:100px;
+    background-color: rgb(6, 6, 6);
+    align-self: flex-end;
+    right:0;
+    animation-fill-mode: forwards;
+}
+@keyframes b{
+    0%{background-color: aqua;
+        right:0;
+        transform: rotate(0);
+    }
+    100%{  background-color: black;
+        right:93.2%; 
+        transform: rotate(540deg);
+    }
+}
+.parent1 .c{ border:2px double white;
+    border-radius: 50%;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-name: c ;
+    animation-delay: 6s;
+    animation-duration: 3s ;
+    width: 100px;
+    height:100px;
+    background-color: rgb(12, 12, 12);
+    left:0;
+
+}
+@keyframes c{
+    0%{background-color: aqua;
+        left:0;transform: rotate(0);
+    }
+    100%{ background-color: black;
+        left:93.2%; transform: rotate(540deg);
+    }
+}
+.parent1 .d{ border:2px double white;
+    border-radius: 50%;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-name: d ;
+    animation-delay: 9s;
+    animation-duration: 3s ;
+    width: 100px;
+    height:100px;
+    background-color: rgb(8, 8, 8);
+    align-self: flex-end;
+    right:0;
+}
+@keyframes d{
+    0%{background-color: aqua;
+        right:0;transform: rotate(0);
+    }
+    100%{ background-color: black;
+        right:93.2%; transform: rotate(540deg);
+    }
+}
+/* -----------------------------------------------------------------*/
+
+.parent1 .e{ border:2px double white;
+    border-radius: 50%;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-name: e ;
+    animation-delay: 12s;
+    animation-duration: 3s ;
+    width: 100px;
+    height:100px;
+    background-color: rgb(13, 14, 14);
+     left:0;
+
+}
+@keyframes e{
+    0%{background-color: aqua;
+        left:0;transform: rotate(0);
+    }
+    100%{ background-color: black;
+        left:93.2%; transform: rotate(540deg);
+    }
+}
+
+.parent1 .g{ border:2px double white;
+    border-radius: 50%;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-name: g ;
+    animation-delay: 15s;
+    animation-duration: 3s ;
+    width: 100px;
+    height:100px;
+    background-color: rgb(15, 15, 15);
+    align-self: flex-end;
+    right:0;
+}
+@keyframes g{
+    0%{background-color: aqua;
+        right:0;transform: rotate(0);
+    }
+    100%{ background-color: black;
+        right:93.2%; transform: rotate(540deg);
+    }
+}
+h3{
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+ 
+    font-size:80px;
+    bottom: 50%;
+    left: 41%; 
+    animation-fill-mode: forwards;
+    animation-name: name;
+    /* animation-delay: 18s; */
+    animation-duration: 18s;
+    /* opacity: 1; */
+}
+@keyframes name {
+    0%{color: #000;
+        opacity: 1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);}
+    100%{opacity: 1;
+       color: aqua;
+       text-shadow: 2px 2px 4px rgba(27, 137, 184, 0.2);
+    }
+}
+
+
+
+.parent1 div{
+    z-index: 4;
+}
+.parent1 h3{
+    z-index: 1;
+}
